@@ -17,8 +17,9 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
     - name: Changelog checker  
-      uses: masterashu/check_changelog@test
+      uses: masterashu/check_changelog@master
       with:
-        changelog: changelog.md
+        changelog: 'changelog/(\d+)[.].*'
+        verify_pr_number: true
       env: 
         GITHUB_TOKEN: '${{ secrets.GITHUB_TOKEN }}'

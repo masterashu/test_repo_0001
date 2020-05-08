@@ -16,6 +16,6 @@ jobs:
       uses: masterashu/welcome_to@master
       with:
         welcome_message: |
-          Welcome to my repository ${{ github.actor }}, So good to find you here
+          Welcome to my repository @${{ github.actor }}, So good to find you here
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -15,7 +15,7 @@ jobs:
     - name: Welcome
       uses: masterashu/welcome_to@master
       with:
-        welcome_message: |
+        welcome_message_pr: |
           Welcome to my repository, So good to find you here
       env:
-        GITHUB_TOKEN: "{{ secrets.GITHUB_TOKEN }}"
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
